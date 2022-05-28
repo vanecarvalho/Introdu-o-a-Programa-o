@@ -17,19 +17,69 @@ perguntas = {
 }
 
 alternativas = {
-    1 : ['A: Abelha', 'B: Barata', 'C: Pulga', 'D: Barbeiro'],
-    2 : ['A: Caju', 'B: Abóbora', 'C: Chuchu', 'D: Coco'],
-    3 : ['A: Matilha', 'B: Rebanho', 'C: Alcateia', 'D: Manada'],
-    4 : ['A: Equilátero', 'B: Isóceles', 'C: Escaleno', 'D: Trapézio'],
-    5 : ['A: Dom Pedro I', 'B: Manuel Bandeira', 'C: Castro Alves', 'D: Carlos Gomes'],
-    6 : ['A: Perder', 'B: Fracassar', 'C: Conseguir', 'D: Desprezar'],
-    7 : ['A: Brasil', 'B: Espanha', 'C: Portugal', 'D: Argentina'],
-    8 : ['A: Costa e Silva', 'B: João Figueiredo', 'C: Ernesto Geisel', 'D: Emílio Médici'],
-    9 : ['A: Rei', 'B: Valete', 'C: Nove', 'D: Ás'],
-    10 : ['A: Vela', 'B: Vento', 'C: Vênia', 'D: Veia'],
+    1 : [
+            'A) Abelha',
+            'B) Barata',
+            'C) Pulga',
+            'D) Barbeiro'
+        ],
+    2 : [
+            'A) Caju',
+            'B) Abóbora', 
+            'C) Chuchu', 
+            'D) Coco'
+         ],
+    3 : [
+            'A) Matilha', 
+            'B) Rebanho', 
+            'C) Alcateia', 
+            'D) Manada'
+        ],
+    4 : [
+            'A) Equilátero', 
+            'B) Isóceles', 
+            'C) Escaleno', 
+            'D) Trapézio'
+        ],
+    5 : [
+            'A) Dom Pedro I', 
+            'B) Manuel Bandeira', 
+            'C) Castro Alves', 
+            'D) Carlos Gomes'
+        ],
+    6 : [
+            'A) Perder', 
+            'B) Fracassar', 
+            'C) Conseguir', 
+            'D) Desprezar'
+        ],
+    7 : [
+            'A) Brasil', 
+            'B) Espanha', 
+            'C) Portugal', 
+            'D) Argentina'
+        ],
+    8 : [
+            'A) Costa e Silva', 
+            'B) João Figueiredo', 
+            'C) Ernesto Geisel', 
+            'D) Emílio Médici'
+        ],
+    9 : [
+            'A) Rei', 
+            'B) Valete', 
+            'C) Nove', 
+            'D) Ás'
+        ],
+    10 : [
+            'A) Vela', 
+            'B) Vento', 
+            'C) Vênia', 
+            'D) Veia'
+        ],
 }
 
-respostasCorretas = {
+gabarito = {
     1 : 'D',
     2 : 'B',
     3 : 'A',
@@ -51,12 +101,13 @@ for i in range(qtdRodadas):
     print(perguntas[chaveSorteada])
 
     respostaUsuario = input(f'Escolha uma alternativa\n {alternativas[chaveSorteada]}\n')
-    if(respostaUsuario.upper() != respostasCorretas[chaveSorteada]):
+    if (respostaUsuario.upper() != gabarito[chaveSorteada]):
         print('GAME OVER!')
         break
 
-    pontos+=100
+    pontos += 100
     del perguntas[chaveSorteada]
     del alternativas[chaveSorteada]
+    del gabarito[chaveSorteada]
 
 print(f'Sua pontuação foi: {pontos} pontos')
