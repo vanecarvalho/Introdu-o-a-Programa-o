@@ -100,7 +100,11 @@ for i in range(qtdRodadas):
 
     print(perguntas[chaveSorteada])
 
-    respostaUsuario = input(f'Escolha uma alternativa\n {alternativas[chaveSorteada]}\n')
+    for alternativa in alternativas[chaveSorteada]:
+        print(alternativa)
+        
+    respostaUsuario = input('Escolha uma alternativa: ')
+
     if (respostaUsuario.upper() != gabarito[chaveSorteada]):
         print('GAME OVER!')
         break
