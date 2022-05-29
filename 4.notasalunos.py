@@ -27,7 +27,6 @@ for nota in notas:
     if (nota > media):
         acimaMedia += 1
         
-for nota in notas:
     somatorioDasDiferenças += (nota - media)**2
 
 desvioPadrao = math.sqrt(somatorioDasDiferenças / qtdNotas)

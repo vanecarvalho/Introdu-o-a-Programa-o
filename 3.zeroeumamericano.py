@@ -26,7 +26,7 @@ while resto > qtdParticipantes:
     resto -= qtdParticipantes
 
 print(f'Total: {somaDedos}')
-print(f'O vencedor é: {resto}')
+print(f'O vencedor é o participante {resto}')
 
 
 # Autor: Vanessa da Silva Lima de Carvalho
