@@ -11,6 +11,11 @@ cont = 1
 while (cont <= qtdParticipantes):
     dedo = int(input(f'Participante {cont} : '))
 
+    while dedo < 0 or dedo > 10:
+        print('O valor informado deve ser entre 0 e 10')
+        dedo = int(input(f'Participante {cont} : '))
+
+
     participantes.append(dedo)
     
     somaDedos += dedo
