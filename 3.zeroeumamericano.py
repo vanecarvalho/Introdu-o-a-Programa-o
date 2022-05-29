@@ -27,3 +27,7 @@ while resto > qtdParticipantes:
 
 print(f'Total: {somaDedos}')
 print(f'O vencedor é: {resto}')
+
+
+# Autor: Vanessa da Silva Lima de Carvalho
+# email: vslc@discente.ifpe.edu.br

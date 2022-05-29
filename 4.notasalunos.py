@@ -42,3 +42,7 @@ print(f'\nA soma das notas é: {somaNotas}')
 print(f'A média das notas é: {media:.2f}')
 print(f'A quantidade de alunos que tiraram nota acima da média é: {acimaMedia}')
 print(f'O desvio padrão das notas é: {desvioPadrao:.2f}')
+
+
+# Autor: Vanessa da Silva Lima de Carvalho
+# email: vslc@discente.ifpe.edu.br

@@ -30,3 +30,6 @@ for key in notas:
     if(value != 0):
         print(f'R$ {key} : {value}')
         
+
+# Autor: Vanessa da Silva Lima de Carvalho
+# email: vslc@discente.ifpe.edu.br

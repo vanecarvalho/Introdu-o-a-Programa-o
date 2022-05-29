@@ -115,3 +115,7 @@ for i in range(qtdRodadas):
     del gabarito[chaveSorteada]
 
 print(f'Sua pontuação foi: {pontos} pontos')
+
+
+# Autor: Vanessa da Silva Lima de Carvalho
+# email: vslc@discente.ifpe.edu.br
