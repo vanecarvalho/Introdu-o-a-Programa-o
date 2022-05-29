@@ -25,6 +25,5 @@ resto = somaDedos
 while resto > qtdParticipantes:
     resto -= qtdParticipantes
 
-print(participantes)
 print(f'Total: {somaDedos}')
 print(f'O vencedor é: {resto}')
